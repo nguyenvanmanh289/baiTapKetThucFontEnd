@@ -1,0 +1,307 @@
+#blog-single{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(230,230,230);
+}
+#blogsg-l-content{
+    width: 65%;
+}
+
+/* blogsg-info */
+#blogsg-info{
+
+}
+#blogsg-info img{
+    width: 100%;
+    margin-top: 20px;
+}
+#blogsg-info h1{
+    font-size: 1.6em;
+    margin: 20px 20px;
+}
+#blogsg-info button{
+    background-color: rgb(0, 126, 126);
+    border: none;
+    margin-left: 20px;
+    color: white;
+    border-radius: 5px;
+}
+#blogsg-info p{
+    margin: 20px 20px;
+}
+#blogsg-more-info{
+    background-color: gray;
+    height: 100px;
+    width: 90%;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blogsg-more-info p{
+    border-left: 1px solid rgb(162, 162, 162);
+    padding-left: 20px;
+    color: rgb(216, 216, 216);
+    transition: all .1s linear;
+    &:hover{
+        border-left: 1px solid rgb(0, 255, 225);
+        color: white;
+    }
+}
+#blogsg-info h2{
+    margin: 20px;
+}
+
+/* blogsg-tags */
+#blogsg-tags{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+#blogsg-tags h1{
+    margin-left: 20px;
+}
+#blogsg-tags ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+#blogsg-tags ul li{
+    background-color: rgb(208, 208, 208);
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+/* blogsg-pagination */
+#blogsg-pagination ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    margin: 20px 0;
+    margin-top: 40px;
+    
+}
+#blogsg-pagination ul li{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 7px;
+    font-size: 1.3em;
+    transition: all .2s linear;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+
+/* blogsg-product */
+#blogsg-product ul{
+    display: flex;
+    justify-content: space-between;
+}
+#blogsg-product >ul >li{
+    width: 48%;
+}
+.blog-r-item{
+    width: 100%;
+    border: 1px solid lightblue;
+}
+/* blog-ranking */
+#blog-ranking{
+
+}
+#rank-title{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+#rank-title ul{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+#rank-title ul li:last-child{
+    background-color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px;
+    transition: all .2s linear;
+    
+    &:hover{
+        background-image: linear-gradient(35deg,black,gray,red);
+        border:1px solid white;
+    }
+}
+#rank-star{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+#graph-rank{
+   width: 60%;
+   
+}
+#graph-rank ul li{
+    display: flex;
+}
+#graph-rank ul li p i{
+    color: rgb(144, 213, 40);
+}
+/* lever-bar */
+.progress-rang{
+    width: 60%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar-rang{
+    width: 80%;
+    height: 30%;
+    background-color: rgb(0, 234, 255);
+}
+
+/*=point=*/
+#point-rank{
+    width: 35%;
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+#point-rank p{
+    width: 70%;
+    text-align: center;
+    font-size: 1.2em;
+}
+#point-rank p i{
+   color: rgb(151, 225, 41);
+}
+#point-rank h1{
+    width: 70%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* blogsg-review */
+#blogsg-review{
+    margin-top: 30px;
+}
+#blogsg-review h1{
+    margin-left: 20px;
+}
+#blogsg-review >ul{
+    margin: 20px;
+}
+
+#blogsg-review >ul >li{
+    height: 100px;
+    display: flex;
+}
+.logo{
+    height: 90%;
+    width: 20%;
+    border: 1px solid rgb(185, 185, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoinfo{
+    margin-left: 10px;
+}
+.logoinfo ul{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.logoinfo li:first-child{
+    font-weight: 600;
+}
+.logoinfo li:last-child{
+    color: rgb(101, 154, 22);
+}
+.logoinfo p{
+    width: 75%;
+    color: gray;
+}
+
+/*==contact blog*/
+#blogsg-contact{
+   margin-top: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   background-color: white;
+   border-top-right-radius: 100px;
+   border-bottom-right-radius: 100px;
+   padding-bottom: 20px;
+   border: 1px solid rgb(0, 255, 217);
+   border-left: none;
+}
+#blogsg-contact h1{
+   margin: 20px;
+   width: 80%;
+}
+#blogsg-contact input{
+    width: 45%;
+    height: 60px;
+    margin:0 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+#blogsg-contact textarea{
+    width: 100%;
+    margin:0 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#blogsg-contact span{
+    margin-left: 20px;
+    color: gray;
+    font-size: 1.2em;
+}
+#blogsg-contact p{
+    width: 100%;
+    margin-left: 20px;
+    color: green;
+}
+#blogsg-contact button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: lightgray;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: all .2s linear;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+
+/*==================*/
+#blogsg-r-content{
+    width: 25%;
+}
+

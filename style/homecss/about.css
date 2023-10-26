@@ -1,0 +1,46 @@
+#storie-of-home{
+    width: 80%;
+    height: 450px;
+    margin-top: 30px;
+}
+#storie-of-home ul{
+    display: flex;
+}
+.storie-item-home{
+    width: 48%;
+    margin-left: 20px;
+}
+
+/* <!-----popular-project--> */
+#menu-footer_nav{
+    width: 80%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.41);
+    border-radius: 50px;
+    position: absolute;
+    top: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu-footer_nav>li{
+    margin: 0 20px;
+}
+#mini-nav,#share-print{
+    display: flex;
+}
+#mini-nav a,#share-print li{
+    margin-left: 10px;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    &:hover{
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+}
+#mini-nav a:last-child{
+    color: white;
+}
+#mini-nav:hover a:not(:hover){
+    color: rgb(0, 0, 0);
+}

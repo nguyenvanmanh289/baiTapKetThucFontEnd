@@ -1,0 +1,304 @@
+#popular-project{
+    height: 200px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+#popular-project_wrap{
+    height: 30%;
+}
+
+#popular-project form{
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+#popular-project form input[type="text"]{
+    width: 40%;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+#popular-project form select{
+    width: 15%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+}
+#popular-project form button{
+    width: 12%;
+    border: none;
+    border-radius: 5px;
+}
+#popular-project form button[type="submit"]{
+    background-color: rgb(63,63,63);
+    color: white;
+    font-size: 1.5em;
+    transition: all .2s linear;
+    &:hover{
+        background-color: rgb(0, 0, 0);
+        color: lightblue;
+    }
+}
+#popular-project form button[type="button"]{
+    background: transparent;
+}
+#popular-project form button[type="button"] i{
+    background-color: rgb(48, 165, 255);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    transition: all .2s linear;
+    color: white;
+}
+#popular-project form button[type="button"]:hover i{
+    background-color: black;
+    color: rgb(255, 0, 0);
+    transform: rotate(90deg);
+}
+
+/* <!-----popular-project--> */
+#agent-ln-head{
+    width: 100%;
+}
+#agent-listening{
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+}
+#agent-ln-head{
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   width: 90%;
+   padding-top: 20px;
+}
+
+
+#agent-ln-content{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+/*author-info*/
+#author-info{
+    display: flex;
+    width: 70%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+}
+#a-info{
+    display: flex;
+    margin-left: 20px;
+    height: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+}
+#a-info h1{
+    width: 100%;
+}
+#a-info p{
+    width: 100%;
+}
+#a-info ul{
+    width: 100%;
+    display: flex;
+}
+#a-info ul li{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s linear;
+    &:hover{
+        background-color: white;
+        border: 1px solid lightblue;
+        cursor: pointer;
+    }
+}
+#a-info button{
+    width: 120px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 255, 145);
+    font-size: 1.1em;
+    transition: all .2s linear;
+    &:hover{
+        background-color: aqua;
+        color: white;
+    }
+}
+
+/*contac-form*/
+#contact-form{
+    width: 28%;
+    aspect-ratio: 3/4;
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    border-radius: 10px;
+}
+#contact-form h1{
+    width: 90%;
+    font-size: 1.4em;
+}
+#contact-form input,#contact-form button{
+    width: 90%;
+    height: 50px;
+    background: transparent;
+    padding-left: 10px;
+    border: 1px solid lightblue;
+    transition: all .2s linear;
+}
+#contact-form textarea{
+    width: 90%;
+    height: 40%;
+    border: 1px dotted lightblue;
+}
+#contact-form button:hover{
+    background-color: rgb(0, 82, 82);
+    color: white;
+}
+
+
+/*more-info*/
+#more-info{
+    width: 70%;
+    aspect-ratio: 5/1.6;
+    background-color: rgb(255, 255, 255);
+    margin: 30px 0;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+}
+#more-info h1{
+    width: 90%;
+    height: 10%;
+    font-size: 1.3em;
+}
+#more-info hr{
+    width: 100%;
+}
+#more-info p{
+    width: 90%;
+}
+
+
+/*===============list product=================*/
+#all-product{
+    width: 80%;
+}
+#all-product >ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+#all-product >ul li{
+    margin-left: 30px;
+    width: 100px;
+    height: 50%;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: all .2s linear;
+    &:hover{
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+    }
+}
+
+#list-product{
+    width: 80%;
+    margin: 30px 0;
+}
+.product-item{
+    margin-left: 20px;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    border: 1px solid lightblue;
+}
+.product-item img{
+    width: 48%;
+}
+.product-info{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+.product-info ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+    .heart{
+        margin-left: 30px;
+    }
+
+.product-info p{
+    width: 100%;
+}
+.product-info >button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: aqua;
+    font-size: 1.2em;
+    transition: all .2s linear;
+    &:hover{
+        background-color: rgb(33, 33, 33);
+        color: white;
+    }
+}
+.product-info h2{
+    width: 100%;
+}
+.product-info ul li h3{
+    font-size: 1em;
+    margin-right: 30px;
+}
+.product-info ul li p{
+    color: lightgray;
+}
+
+.product-info> span{
+    line-height: 50px;
+    margin-left: 10px;
+}

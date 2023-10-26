@@ -1,0 +1,232 @@
+#blog-body{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+
+#blog-left{
+    width: 30%;
+}
+/*==blog search==*/
+#blog-l-search{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 20px 0;
+}
+#blog-l-search input{
+    width: 90%;
+    height: 60%;
+    padding-left: 20px;
+    font-size: 1.3em;
+    border-radius: 10px;
+}
+/*==blog cate..==*/
+#blog-l-categories{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+#blog-l-categories h1 {
+    font-size: 1.5em;
+    height: 10%;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+#blog-l-categories ul{
+    width: 100%;
+   height: 90%;
+}
+#blog-l-categories ul li{
+    margin-top: 20px;
+    color: rgb(131, 131, 131);
+    margin-left: 20px;
+    transition: all .2s linear;
+    cursor: pointer;
+    &:hover{
+        color: rgb(0, 0, 0);
+        font-size: 1.1em;
+    }
+}
+/*==recent post==*/
+#blog-l-recentPost{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+#blog-l-recentPost >h1{
+    font-size: 1.5em;
+    padding-top: 20px;
+    margin-left: 20px;
+    height: 10%;
+}
+#blog-l-recentPost ul{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+#blog-l-recentPost ul li{
+    height: 25%;
+    width: 80%;
+    display: flex;
+}
+#blog-l-recentPost ul li img{
+    width: 50%;
+    height: 100%;
+}
+#blog-l-recentPost ul li h1{
+    font-size: 1em;
+    margin-left: 10px;
+}
+#blog-l-recentPost ul li p{
+    color: gray;
+    margin-left: 10px;
+}
+/*==our photo==*/
+#blog-l-ourPhoto{
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+}
+#blog-l-ourPhoto h1{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+#blog-l-ourPhoto ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#blog-l-ourPhoto ul li{
+    width: 30%;
+    aspect-ratio: 4/3;
+    margin-top: 10px;
+}
+#blog-l-ourPhoto ul li img{
+    width: 100%;
+    height: 100%;
+}
+/*==tags==*/
+#blog-l-tags{
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+
+}
+#blog-l-tags h1{
+    padding-top: 20px;
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#blog-l-tags ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    justify-content: space-around;
+}
+#blog-l-tags ul li{
+    width: 30%;
+    margin-top: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+
+
+/*====blog right==================*/
+#blog-right{
+    width: 65%;
+}
+#blog-r-content{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.blog-r-item{
+    width: 48%;
+    aspect-ratio: 3/4;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blog-r-item img{
+    width: 100%;
+}
+
+.blog-r-info{
+    width: 90%;
+}
+.blog-r-info h1{
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+.blog-r-info button{
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+}
+.blog-r-info span{
+    margin-left: 10px;
+}
+.blog-r-info p{
+    margin: 15px 0;
+}
+.blog-r-info ul{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-r-info ul li{
+    padding: 10px 0;
+}
+
+/*==pagination==*/
+.pagination{
+    width: 100%;
+    margin-top: 20px;
+}
+.pagination-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.pagination-wrap ul{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-wrap ul li{
+    width: 50px;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 5px;
+    color: white;
+}
+.pagination-wrap button{
+    width: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+    border-radius: 50%;
+}

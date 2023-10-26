@@ -1,0 +1,29 @@
+#blog-l-search{
+    flex-wrap: wrap;
+    height: 500px;
+}
+#blog-l-search h1{
+    width: 90%;
+    font-size: 1.5em;
+}
+#blog-l-search input{
+    height: 10%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(231, 229, 229);
+}
+
+
+#blog-right{
+    width: 100%;
+}
+#all-product{
+    width: 100%;
+}
+#list-product{
+    width: 100%;
+}
+.product-item{
+    width: 100%;
+    height: 300px;
+}

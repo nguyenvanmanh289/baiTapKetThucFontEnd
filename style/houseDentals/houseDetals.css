@@ -1,0 +1,403 @@
+/*carousel*/
+#popular-project{
+    height: auto;
+}
+#carouselExample{
+    width: 100%;
+    height: 100%;
+}
+
+/*==menu==*/
+#popular-project_wrap{
+    height: 10%;
+}
+
+/*==more button==*/
+#button-combo{
+    position: absolute;
+    left: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    width: 50px;
+}
+#button-combo button{
+    width: 100%;
+    aspect-ratio: 1;
+    margin-top: 10px;
+    background-color: rgb(63,63,63);
+    color: white;
+    cursor: pointer;
+}
+
+
+/*==mini menu==*/
+#mini-menu{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 10px;
+    z-index: 2;
+}
+#mini-menu ul{
+    width: 50px;
+}
+#mini-menu ul li{
+    width: 100%;
+    aspect-ratio: 1;
+    margin-top: 10px;
+    background-color: rgb(63,63,63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/*==project-info==*/
+#house-project_info{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    backdrop-filter: blur(5px);
+}
+#name-address p{
+    color: lightgray;
+}
+#name-address h1{
+    color: white;
+}
+#name-address button{
+    background-color: greenyellow;
+    border: none;
+    width: 100px;
+    transition:  all .1s linear;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+
+#price-share{
+     margin-left: 20px;
+}
+#price-share ul{
+    display: flex;
+}
+#price-share ul li{
+    color: white;
+}
+#price-share h1{
+    color: rgb(156, 255, 50);
+}
+#price-share p{
+    color: lightgray;
+}
+
+/* <!-------------dynamic content------------> */
+#body-nav{
+    width: 80%;
+
+}
+#body-nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    
+}
+#body-nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    transition: all .1s linear;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+#body-nav ul li:not(:first-child){
+     border-left: 1px solid gray;
+}
+
+/*main-content*/
+#blog-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#blog-left{
+    width: 65%;
+}
+
+#blog-left ul{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-left: 20px;
+}
+#blog-left ul li h1{
+    font-size: 1.5em;
+}
+#blog-left ul li p{
+    color: gray;
+}
+/*==table==*/
+#blog-left table{
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+#blog-left table tr{
+    height: 40px;
+}
+
+/*description*/
+#description{
+    margin-top: 20px;
+    background-color: white;
+}
+#description h1{
+    font-size:1.5em;
+    margin: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+}
+#description p{
+    margin-left: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    text-align:justify;
+}
+/* detail */
+#detail{
+    width: 100%;
+    height: 250px;
+    
+}
+
+#detail ul{
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+
+#detail ul li{
+    font-size: 1.5em;
+    &:last-child{
+        background-color: rgb(65, 65, 65);
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: white;
+    }
+}
+
+/* amenities */
+#amenities h1{
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+#amenities tr{
+    height: 50px;
+}
+#amenities td{
+    height: 100%;
+    font-size: 1.1em;
+}
+#amenities input{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+/*video*/
+#video{
+    margin-top: 20px;
+}
+#video h1{
+    font-size: 1.5em;
+    margin: 20px;
+}
+#video iframe{
+    margin-left: 20px;
+}
+
+/* floor-plans */
+#floor-plans{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+#floor-plans ul{
+    width: 93%;
+    margin-left: -30px;
+    border: none;
+    background-color: transparent;
+}
+#floor-plans ul li:first-child{
+    font-size: 1.5em;
+}
+#floor-plans img{
+    width: 60%;
+    margin-bottom: 20px;
+}
+#floor-plans p{
+    width: 70%;
+    text-align: justify;
+}
+
+/* walkscore */
+#walkscore{
+    margin-top: 30px;
+}
+#walkscore h1{
+    font-size: 1.5em;
+    margin: 20px;
+}
+#walkscore ul{
+    border: none;
+    height: 100px;
+}
+#walkscore ul li{
+    height: 100%;
+    width: 40%;
+    align-items: center;
+}
+#walkscore ul li:first-child{
+    display: flex;
+    margin-left: 20px;
+}
+#walkscore ul li:last-child{
+    align-items: center;
+    display: flex;
+}
+#walkscore ul li> span{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: rgb(125, 185, 34);
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* pageview */
+#pageview{
+    margin-top: 30px;
+}
+#pageview h1{
+    font-size: 1.5em;
+    margin: 20px
+}
+#pageview img{
+    width: 100%;
+    margin-left: 20px;
+}
+
+/* firsattack */
+#firsattack{
+    margin-top: 30px;
+}
+#firsattack h1{
+    font-size: 1.5em;
+    margin: 20px
+}
+#firsattack ul{
+    border: none;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+}
+#firsattack ul li{
+    width: 30%;
+    font-size: 1.1em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+#firsattack ul li i{
+    font-size: 2em;
+    color: red;
+}
+
+/* blog-ranking */
+#blog-ranking{
+    margin-top: 30px;
+}
+#rank-title >ul{
+    border: none;
+}
+#rank-title> ul> li:first-child{
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+#blog-ranking >ul> li:last-child{
+    margin-right: 20px;
+}
+
+/* rank-star */
+#rank-star{
+
+}
+#graph-rank >ul{
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    height: auto;
+    align-items: center;
+}
+#graph-rank >ul>li{
+    width: 80%;
+}
+
+/* blogsg-review */
+#blogsg-review{
+    height: auto;
+}
+#blogsg-review h1{
+    font-size: 1.5em;
+}
+#blogsg-review >ul{
+    flex-wrap: wrap;
+    height: 100%;
+    border: none;
+    padding-bottom: 20px;
+}
+.logoinfo ul{
+    border: none;
+}
+.logoinfo p{
+    margin-left: 20px;
+}
+
+
+
+
+#blog-right{
+    margin-top: -20px;
+    width: 30%;
+    margin-right: 20px;
+}
+
+
