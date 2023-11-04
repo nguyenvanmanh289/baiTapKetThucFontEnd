@@ -11,11 +11,19 @@
     <link rel="stylesheet" href="./style/indexcss/content.css">
     <link rel="stylesheet" href="./style/agentList/agentList.css">
     <link rel="stylesheet" href="./style/agentList/agentListTablet.css">
+    <link rel="stylesheet" href="./style/agentList/agentListMobie.css">
+
     <link rel="stylesheet" href="./style/blog/blog.css">
+    <link rel="stylesheet" href="./style/blog/blogMobie.css">
     <link rel="stylesheet" href="./style/blogDetal/blogDetals.css">
+    <link rel="stylesheet" href="./style/blogDetal/blogDetalMobie.css">
+
     <link rel="stylesheet" href="./style/houseList/houseList.css">
     <link rel="stylesheet" href="./style/houseDentals/houseDetals.css">
+    <link rel="stylesheet" href="./style/houseDentals/houseDetalsMobie.css">
     <link rel="stylesheet" href="./style/indexcss/contentTablet.css">
+    <link rel="stylesheet" href="./style/indexcss/contentMobie.css">
+
 </head>
 <body>
     <!-----overviewbar---ontop-->
@@ -55,13 +63,14 @@
     <!-----nav_contact-->
     <div id="nav-contact">
         <div id="nav-contact_wrap">
-            <a href="index.html"><i class="fa-solid fa-l" >H</i> LemanHouse</a>
+            <a href="#"><i class="fa-solid fa-l" >H</i> LemanHouse</a>
             <div id="contactAndSearch">
-                <a href="#"><i class="fa-solid fa-phone-volume"></i>+1 234-567-3245<br>info@gmail.com</a>
-                <a href="#"><i class="fa-solid fa-location-dot"></i>Trau Quy, Gia Lam, Ha Noi</a>
+                <a href="#"><i class="fa-solid fa-phone-volume"></i><span>+1 234-567-3245<br>info@gmail.com</span></a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i><span>Trau Quy, Gia Lam, Ha Noi</span></a>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  </form>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
+                </form>
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </div>
@@ -735,6 +744,71 @@
         })
 
 
+          //project info
+          let projectList = [
+            ["trau quy, gia lam, ha noi", "$ 490,000"],
+            ["long bien, ha noi", "$ 400,000"],
+            ["hung yen, gia lam, ha noi", "$ 790,000"]
+        ];
+
+        const btnNext = document.getElementsByClassName('carousel-control-next')[0];
+        const btnPre = document.getElementsByClassName('carousel-control-prev')[0];
+
+        const housepre = document.getElementById("house-pre");
+            housepre.addEventListener('click',()=>{
+                btnPre.click();
+            })
+        const housenext = document.getElementById("house-next")
+            housenext.addEventListener('click',()=>{
+                btnNext.click();
+            })
+        const projectCn = document.getElementById('project-info');
+        const projectInfop = document.querySelector('#name-address p:last-child');
+        const projectInfoh1 = document.querySelector('#price-share h1');
+
+        
+
+        let stateClick = 0;
+            btnNext.addEventListener('click', () => {
+                if(stateClick>=2){
+                    stateClick = 0;
+                }
+                else{
+                    stateClick++;
+                    
+                }
+                console.log("next", stateClick);
+                projectInfop.innerHTML = `<i class="fa-solid fa-location-dot"></i> ${projectList[stateClick][0]}`;
+                projectInfoh1.innerHTML = `${projectList[stateClick][1]}`;
+                projectCn.style.animation = 'projectI 0.5s linear alternate'
+                setTimeout(()=>{
+                    projectCn.style.animation = '';
+                },300)
+                
+            });
+            btnPre.addEventListener('click',()=>{
+                if(stateClick<=0){
+                    stateClick=2;
+                }
+                else{
+                    stateClick--;
+                   
+                } 
+                console.log("pre", stateClick);
+                projectInfop.innerHTML = `<i class="fa-solid fa-location-dot"></i> ${projectList[stateClick][0]}`;
+                projectInfoh1.innerHTML = `${projectList[stateClick][1]}`;
+                projectCn.style.animation = 'projectI 0.5s linear alternate'
+                setTimeout(()=>{
+                    projectCn.style.animation = '';
+                },300)
+            });
+
+
+       projectList.map((pro)=>{
+            console.log(pro)
+       })
+
+
         $(document).ready(function(){
             //slide pre and next button
             $("#agent-slide button:nth-child(1)").mousedown(function(){
@@ -757,6 +831,33 @@
                 $("html").animate({
                     scrollTop: "0"
                 })
+            })
+
+            if ($(window).width() < 500) {
+                $("i.fa-bars").css("display", "block");
+            } else {
+                $("i.fa-bars").css("display", "none");
+            }
+
+            // Sử dụng hàm resize để kiểm tra kích thước màn hình khi thay đổi
+            $(window).resize(function (){
+                if ($(window).width() < 500) {
+                    $("i.fa-bars").css("display", "block");
+                } else {
+                    $("i.fa-bars").css("display", "none");
+                }
+            });
+
+            let stateBars = false;
+            $("i.fa-bars").click(function(){
+                if(!stateBars){
+                    $("#menu-item").css("display","block");
+                    stateBars = true;
+                }
+                else{
+                    stateBars = false;
+                    $("#menu-item").css("display","none");
+                }
             })
         })
     </script>

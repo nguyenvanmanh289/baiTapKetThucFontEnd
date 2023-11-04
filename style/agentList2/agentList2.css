@@ -35,6 +35,44 @@
 @media screen and (min-width:500px) and (max-width:999px) {
     #agent-list-content {
         width: 90%;
+        
+    }
+
+    #agent-list-content ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+
+    #agent-list-content ul li {
+        width: 48%;
+        aspect-ratio: 3/4;
+        margin-top: 20px;
+        border: 1px solid lightblue;
+    }
+
+    #agent-list-content ul li img {
+        width: 100%;
+    }
+
+    #agent-list-content ul li h1 {
+        margin: 20px 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #agent-list-content ul li p {
+        margin: 20px;
+        font-size: 1.2em;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    #agent-list-content {
+        width: 90%;
+        padding-bottom: 20px;
     }
 
     #agent-list-content ul {
@@ -45,7 +83,7 @@
     }
 
     #agent-list-content ul li {
-        width: 48%;
+        width: 100%;
         aspect-ratio: 3/4;
         margin-top: 20px;
         border: 1px solid lightblue;

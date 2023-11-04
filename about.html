@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./style/indexcss/content.css">
     <link rel="stylesheet" href="./style/homecss/about.css">
     <link rel="stylesheet" href="./style/indexcss/contentTablet.css">
+    <link rel="stylesheet" href="./style/indexcss/contentMobie.css">
 </head>
 <body>
     <!-----overviewbar---ontop-->
@@ -50,13 +51,14 @@
     <!-----nav_contact-->
     <div id="nav-contact">
         <div id="nav-contact_wrap">
-            <a href="index.html"><i class="fa-solid fa-l" >H</i> LemanHouse</a>
+            <a href="#"><i class="fa-solid fa-l" >H</i> LemanHouse</a>
             <div id="contactAndSearch">
-                <a href="#"><i class="fa-solid fa-phone-volume"></i>+1 234-567-3245<br>info@gmail.com</a>
-                <a href="#"><i class="fa-solid fa-location-dot"></i>Trau Quy, Gia Lam, Ha Noi</a>
+                <a href="#"><i class="fa-solid fa-phone-volume"></i><span>+1 234-567-3245<br>info@gmail.com</span></a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i><span>Trau Quy, Gia Lam, Ha Noi</span></a>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  </form>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
+                </form>
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </div>
@@ -508,6 +510,36 @@
                 $("html").animate({
                     scrollTop: "0"
                 })
+            })
+
+            
+            //ẩn menu bar nếu view lơn hơn 500px
+            if ($(window).width() < 500) {
+                $("i.fa-bars").css("display", "block");
+            } else {
+                $("i.fa-bars").css("display", "none");
+            }
+
+            // Sử dụng hàm resize để kiểm tra kích thước màn hình khi thay đổi
+            $(window).resize(function () {
+                if ($(window).width() < 500) {
+                    $("i.fa-bars").css("display", "block");
+                } else {
+                    $("i.fa-bars").css("display", "none");
+                }
+            });
+
+            let stateBars = false;
+            $("i.fa-bars").click(function(){
+                if(!stateBars){
+                    $("#menu-item").css("display","block");
+                    stateBars = true;
+                }
+                else{
+                    stateBars = false;
+                    $("#menu-item").css("display","none");
+                }
+                
             })
         })
     </script>
