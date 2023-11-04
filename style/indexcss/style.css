@@ -1244,7 +1244,7 @@ i {
         position: absolute;
         z-index: 2;
         top:0;
-        display: block;
+        display: none;
     }
 
     #menu-item>li {
