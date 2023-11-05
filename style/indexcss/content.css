@@ -608,18 +608,18 @@
         -webkit-text-fill-color: transparent;
         font-size: 2em;
     }
-      /*lemanhouse-item*/
-    #lemanhouse-item li{
+      /*LEE HOME-item*/
+    #LEE HOME-item li{
         margin-top: 10px;
         &:nth-child(2){
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             margin-left: 16px;
         }
     }
-    #lemanhouse-item li a:hover{
+    #LEE HOME-item li a:hover{
         color: #ffffff;
     }
-    #lemanhouse-item li i{
+    #LEE HOME-item li i{
         color: #00c3ff;  
         cursor: pointer;
     }
